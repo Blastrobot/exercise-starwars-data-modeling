@@ -20,6 +20,7 @@ class User(Base):
     email = Column(String(64), nullable=False)
     favorites_id = Column(Integer, ForeignKey("favorites.id"))
 
+
 class Favorites(Base):
     __tablename__ = 'favorites'
     id = Column(Integer, primary_key=True)
